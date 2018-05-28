@@ -5,10 +5,9 @@ RUN apt-get update && apt-get install -y \
   software-properties-common \
   openssh-client
 
-RUN add-apt-repository ppa:openjdk-r/ppa && \
+RUN add-apt-repository ppa:linuxuprising/java && \
   apt-get update && \
-  apt-get install -y openjdk-8-jdk \
-  openjdk-8-jre
+  apt-get install -y oracle-java10-installer
 
 RUN echo 2 | update-alternatives --config java && \
   echo 2 | update-alternatives --config javac

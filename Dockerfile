@@ -27,7 +27,7 @@ RUN \
     echo "deb http://ftp.de.debian.org/debian jessie main" >> /etc/apt/sources.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 && \
     apt-get update && \
-    apt-get install -y gtk2-engines libxtst6 libxxf86vm1 freeglut3 libxslt1.1 && \
+    apt-get install -y --force-yes gtk2-engines libxtst6 libxxf86vm1 freeglut3 libxslt1.1 && \
     apt-get update  && \
     \
     echo "===> install Java"  && \
